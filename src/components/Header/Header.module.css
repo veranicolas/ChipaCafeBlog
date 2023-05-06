@@ -1,0 +1,19 @@
+
+.app {
+
+    border: 1px solid grey;
+    width: 70%;
+    height: 10%;
+    display: flex;
+
+    > h1 {
+      padding: 20px;
+      border: 1px solid grey;
+    }
+}
+
+.navbar{
+
+    display: flex;
+    width: 1 / 3;
+}
