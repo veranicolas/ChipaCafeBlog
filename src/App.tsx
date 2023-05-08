@@ -21,9 +21,16 @@ function App() {
               CafeChipa MDP
             </div>
             <div className={styles.navbarComponent}>
-              <a href="#">Cafe</a>
-              <a href="#">Chipa</a>
-              <a href="#">Nosotros</a>
+              <div className={styles.customLink}>
+                <a href="#">Cafe</a>
+              </div>
+             
+              <div className={styles.customLink}>
+                <a href="#">Chipa</a>
+              </div>
+              <div className={styles.customLink}>
+                <a href="#">Nosotros</a>
+              </div>
             </div>
           </div>
           <div className={styles.bodyContainer}></div>

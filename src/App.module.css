@@ -21,6 +21,7 @@
   border-bottom: 1px solid lightgray;
 
   display: flex;
+  justify-content: space-between;
 
   > .title {
     margin: 0;
@@ -30,6 +31,21 @@
     text-align: center;
     vertical-align: middle;
     line-height: 10vh;
+  }
+
+  > .navbarComponent {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    
+    > .customLink {
+      padding: 2vh;
+      line-height: 6vh;
+      width: 100%;
+      text-align: center;
+      border-radius: 12px;
+    }
   }
 }
 
