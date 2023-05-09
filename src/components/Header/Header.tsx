@@ -19,7 +19,7 @@ const Header = () => {
     return (
         <div className={styles.app}>
             <h1>ChipaCafe MDP</h1>
-           
+           <Navbar />
         </div>
     );
 };
