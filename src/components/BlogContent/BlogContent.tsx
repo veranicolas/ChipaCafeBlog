@@ -12,7 +12,9 @@ export const BlogContent = () => {
                 titulo={post.attributes.titulo}
                 lugar={post.attributes.lugar}
                 descripcion={post.attributes.descripcion}
-                conclusion={post.attributesconclusion}
+                conclusion={post.attributes.conclusion}
+                creado={post.attributes.creado}
+                creadoPor={post.attributes.creadoPor}
 
             />
         ))}
