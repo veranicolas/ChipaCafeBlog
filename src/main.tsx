@@ -6,11 +6,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { CafePage } from './components/CafePage/CafePage.tsx'
 import { ChipaPage } from './components/ChipaPage/ChipaPage.tsx'
 import { NosotrosPage } from './components/NosotrosPage/NosotrosPage.tsx'
+import { ErrorPage } from './components/ErrorPage/ErrorPage.tsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <App/>,
+    errorElement: <ErrorPage/>
   },
   {
     path: "/cafe",
