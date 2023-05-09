@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import styles from './App.module.css'
 
 import mockData from './mockData/mockData'
+import { BlogContent } from './components/BlogContent/BlogContent'
 
 // Cree muchos archivos y carpetas para ir organizando como seria cuando se modularize todo.
 // Por motivos de mi salud mental y que no quiero tocar 10 archivos a la vez voy a hacer todo en este primero y de ahi
@@ -33,7 +34,9 @@ function App() {
               </div>
             </div>
           </div>
-          <div className={styles.bodyContainer}></div>
+          <div className={styles.bodyContainer}>
+            <BlogContent/>
+          </div>
         </div>
       </div>
     </>
