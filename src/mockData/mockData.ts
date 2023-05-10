@@ -1,5 +1,3 @@
-import * as coffe1 from '../assets/coffee1.jpg'
-
 export default {
     "data": [
         {
