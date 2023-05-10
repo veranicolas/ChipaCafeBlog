@@ -28,9 +28,9 @@
     > .customLink {
       padding: 2vh;
       line-height: 6vh;
-      width: 100%;
       text-align: center;
       border-radius: 12px;
+      margin: 0;
       
       > a {
         text-decoration: none;
