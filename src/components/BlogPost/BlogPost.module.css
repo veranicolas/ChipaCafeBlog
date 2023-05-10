@@ -1,5 +1,46 @@
 .blogpost{
     margin: 10px;
-    background-color: aliceblue;
+    background-color: rgb(252, 252, 252);
     
+    padding: 2vw;
+    border-radius: 10px;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+
+    box-shadow: 5px 5px 12px -3px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 5px 5px 12px -3px rgba(0,0,0,0.48);
+    -moz-box-shadow: 5px 5px 12px -3px rgba(0,0,0,0.48);
+
+    .blogpostBody{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: auto;
+
+        width: 70%;
+
+        transition: 1ms ease-in;
+
+        > .conclusion{
+            display: none;   
+            transition: 0.7s;
+            padding: 0 20px;
+        }
+    }
+
+    &:hover{
+
+        height: 45vh;
+
+        > .blogpostBody {
+
+            
+            
+            >.conclusion{
+                display: block;
+            }
+        }
+    }
 }

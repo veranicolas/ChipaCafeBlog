@@ -1,11 +1,14 @@
 //@ts-nocheck
-import postData from '../../mockData/mockData.ts';
-import { BlogPost } from '../BlogPost/BlogPost';
 import React from 'react';
+
+import { BlogPost } from '../BlogPost/BlogPost';
+import postData from '../../mockData/mockData.ts';
+
+import styles from './BlogContent.module.css'
 
 export const BlogContent = () => {
   return (
-    <div>
+    <div className={styles.blogpostContainer}>
         {postData.data.map((post) => (
             <BlogPost
                 key={post.id}
@@ -15,7 +18,7 @@ export const BlogContent = () => {
                 conclusion={post.attributes.conclusion}
                 creado={post.attributes.creado}
                 creadoPor={post.attributes.creadoPor}
-
+                foto={post.attributes.foto}
             />
         ))}
     </div>
