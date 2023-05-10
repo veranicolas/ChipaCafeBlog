@@ -8,7 +8,7 @@ import styles from './Header.module.css'
 const Navbar = () => {
     return (
         <div className={styles.navbar}>
-            <a href="#">Cafe</a>
+            <a href="/cafe">Cafe</a>
             <a href="#">Chipa</a>
             <a href="#">Sobre Nosotros</a>
         </div>

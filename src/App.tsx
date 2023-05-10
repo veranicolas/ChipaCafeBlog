@@ -23,14 +23,14 @@ function App() {
             </div>
             <div className={styles.navbarComponent}>
               <div className={styles.customLink}>
-                <a href="#">Cafe</a>
+                <a href="/cafe">Cafe</a>
               </div>
              
               <div className={styles.customLink}>
-                <a href="#">Chipa</a>
+                <a href="/chipa">Chipa</a>
               </div>
               <div className={styles.customLink}>
-                <a href="#">Nosotros</a>
+                <a href="/nosotros">Nosotros</a>
               </div>
             </div>
           </div>
