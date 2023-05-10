@@ -8,13 +8,14 @@
 
 .appContainer{
 
-  height: 100%;
+  height: auto;
   width: 70%;
+  margin-bottom: 10vh;
 }
 
 .bodyContainer{
 
-  height: 88vh;
+  margin-top: 4vh;
+  height: auto;
   width: 100%;
-  overflow: auto;
 }
