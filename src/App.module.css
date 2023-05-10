@@ -10,47 +10,11 @@
 
   height: 100%;
   width: 70%;
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-}
-
-.headerContainer{
-
-  height: 10vh;
-  width: 100%;
-  border-bottom: 1px solid lightgray;
-
-  display: flex;
-  justify-content: space-between;
-
-  > .title {
-    margin: 0;
-    width: 30%;
-    font-size: 1.6em;
-    font-weight: 500;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 10vh;
-  }
-
-  > .navbarComponent {
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    width: 40%;
-    
-    > .customLink {
-      padding: 2vh;
-      line-height: 6vh;
-      width: 100%;
-      text-align: center;
-      border-radius: 12px;
-    }
-  }
 }
 
 .bodyContainer{
 
-  height: 90vh;
+  height: 88vh;
   width: 100%;
+  overflow: auto;
 }

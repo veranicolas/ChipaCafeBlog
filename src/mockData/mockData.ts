@@ -5,9 +5,9 @@ export default {
             "id": 1,
             "attributes": {
                 "titulo": "Muy rico este cafe",
-                "descripcion": "Este cafe realmente es muy rico",
+                "descripcion": "Este cafe realmente es muy rico. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium!",
                 "creado": "2023-05-05",
-                "conclusion": "este cafe estaba rico",
+                "conclusion": "este cafe estaba rico. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium!",
                 "lugar": "Kersen",
                 "foto":'./assets/coffee1.jpg', // a chequear este path asjasjasj
                 "createdAt": "2023-05-05T20:34:19.726Z",
@@ -21,9 +21,9 @@ export default {
             "id": 2,
             "attributes": {
                 "titulo": "aaaaaaa",
-                "descripcion": "AAAAAAAAAA",
+                "descripcion": "AAAAAAAAAA. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium!",
                 "creado": "2023-05-18",
-                "conclusion": "XSSSSS",
+                "conclusion": "XSSSSS Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium!",
                 "foto":'./assets/coffee2.jpg',
                 "lugar": "Kersen",
                 "createdAt": "2023-05-05T20:47:29.756Z",
@@ -37,9 +37,9 @@ export default {
             "id": 3,
             "attributes": {
                 "titulo": "ta feo",
-                "descripcion": "no me gusto",
+                "descripcion": "no me gusto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium! Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates?",
                 "creado": "2023-05-06",
-                "conclusion": "mmmmmmm",
+                "conclusion": "mmmmmmm. Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium!",
                 "lugar": "Kersen",
                 "foto":'./assets/coffee3.jpg',
                 "createdAt": "2023-05-06T18:25:18.965Z",

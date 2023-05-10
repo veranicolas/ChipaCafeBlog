@@ -1,19 +1,50 @@
 
-.app {
+.headerContainer{
 
-    border: 1px solid grey;
-    width: 70%;
-    height: 10%;
+  height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+
+  display: flex;
+  justify-content: space-between;
+
+  > .title {
+    margin: 0;
+    width: 30%;
+    font-size: 1.6em;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+  }
+
+  > .navbarComponent {
+    margin: 0;
     display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    
+    > .customLink {
+      padding: 2vh;
+      line-height: 6vh;
+      width: 100%;
+      text-align: center;
+      border-radius: 12px;
+      
+      > a {
+        text-decoration: none;
+        background-color: rgb(230, 230, 230);
+        border-radius: 8px;
+        padding: 20px;
+        color: rgb(26, 26, 26);
+        
+        transition: 0.6s;
+      }
 
-    > h1 {
-      padding: 20px;
-      border: 1px solid grey;
+      > a:hover{
+        background-color: rgb(29, 29, 29);
+        color: rgb(235, 235, 235);
+      }
     }
-}
-
-.navbar{
-
-    display: flex;
-    width: 1 / 3;
+  }
 }
