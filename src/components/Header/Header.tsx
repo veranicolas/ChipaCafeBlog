@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className={styles.headerContainer}>
             <div className={styles.title}>
-              CafeChipa MDP
+                <a style={{textDecoration:'none', color:'black'}} href="/">CafeChipa MDP</a>
             </div>
             <Navbar />
         </div>
