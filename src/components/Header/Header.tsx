@@ -1,11 +1,12 @@
 import styles from './Header.module.css'
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div className={styles.headerContainer}>
             <div className={styles.title}>
-                <a style={{textDecoration:'none', color:'black'}} href="/">CafeChipa MDP</a>
+                <Link style={{textDecoration:'none', color:'black'}} to="/">CafeChipa MDP</Link>
             </div>
             <Navbar />
         </div>
