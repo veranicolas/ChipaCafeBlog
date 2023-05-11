@@ -59,12 +59,12 @@ export const BlogPost = ({titulo,lugar,descripcion,conclusion,creado,creadoPor, 
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
     >
-        <img src={foto} height={190} width={190}/>
+        <img src={foto} height={190} width={190} style={{borderRadius:6, objectFit:'cover'}}/>
         <div className={styles.blogpostBody}>
           <h2>{titulo}</h2>
           <h3>Lugar: {lugar}</h3>
           <p >{descripcion}</p>
-          <p style={ expanded ? {display:'block'} : {display:'none'}}>Conclusion: {conclusion}</p>
+          <p style={ expanded ? {display:'block'} : {display:'none'}}>{conclusion}</p>
           <p>{creadoPor}, {creado}.</p>
         </div>
     </animated.div>

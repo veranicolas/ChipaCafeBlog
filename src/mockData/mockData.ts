@@ -3,11 +3,11 @@ export default {
         {
             "id": 1,
             "attributes": {
-                "titulo": "Muy rico este cafe",
-                "descripcion": "Este cafe realmente es muy rico. Lorem ipsum dolor sit amet consectetur, adipisicing elit. ",
+                "titulo": "Un lugar icónico en París",
+                "descripcion": "Café de Flore ha estado operando desde 1887. Este café es conocido por su ambiente bohemio y su historia rica en la cultura francesa. ",
                 "creado": "2023-05-05",
-                "conclusion": "este cafe estaba rico. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates?",
-                "lugar": "Kersen",
+                "conclusion": "El café ha sido visitado por grandes escritores y artistas, como Ernest Hemingway y Pablo Picasso. Además de la decoración tradicional del café, la bebida es excelente. Sus opciones de café son impresionantes y el servicio es excepcional. También ofrecen una amplia variedad de platos ligeros y pasteles. En general, este lugar es una excelente opción para experimentar el auténtico café francés y sumergirse en la rica historia y cultura de París.",
+                "lugar": "Café de Flore",
                 "foto":'../coffee1.jpg', // a chequear este path asjasjasj
                 "createdAt": "2023-05-05T20:34:19.726Z",
                 "updatedAt": "2023-05-05T20:49:27.816Z",
@@ -19,12 +19,12 @@ export default {
         {
             "id": 2,
             "attributes": {
-                "titulo": "aaaaaaa",
-                "descripcion": "AAAAAAAAAA. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo ",
+                "titulo": "Es un lugar moderno",
+                "descripcion": "Blue Bottle Coffee es elegante para disfrutar del café en la ciudad de Nueva York. Su café de especialidad es de alta calidad y están comprometidos con el suministro de granos de café éticamente obtenidos y de comercio justo.",
                 "creado": "2023-05-18",
-                "conclusion": "XSSSSS Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium!",
+                "conclusion": " El servicio es rápido y eficiente, lo que hace que sea una excelente opción para una parada rápida antes de dirigirse al trabajo. Además, su selección de pasteles y bocadillos es deliciosa y se complementa perfectamente con su café. Si estás buscando un lugar para disfrutar de un café de alta calidad en un ambiente moderno, Blue Bottle Coffee es una excelente opción.",
                 "foto":'../coffee2.jpg',
-                "lugar": "Kersen",
+                "lugar": "Blue Bottle Coffee",
                 "createdAt": "2023-05-05T20:47:29.756Z",
                 "updatedAt": "2023-05-05T20:47:36.097Z",
                 "publishedAt": "2023-05-05T20:47:36.094Z",
@@ -35,11 +35,11 @@ export default {
         {
             "id": 3,
             "attributes": {
-                "titulo": "ta feo",
-                "descripcion": "no me gusto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi? ",
+                "titulo": "Es para disfrutar del café en Hong Kong.",
+                "descripcion": "Con un ambiente moderno y contemporáneo, este lugar es conocido por su café de alta calidad y su amplia variedad de opciones de café de especialidad. ",
                 "creado": "2023-05-06",
-                "conclusion": "mmmmmmm. Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quas dolore minus illo earum perspiciatis reiciendis veritatis beatae excepturi eius quae voluptatibus quia quo ut soluta, hic voluptates? Quam quos assumenda non illum suscipit quas sapiente veniam minima aliquid praesentium!",
-                "lugar": "Kersen",
+                "conclusion": " Además, su selección de comida es excepcional, con opciones para todos los gustos, desde comidas ligeras hasta platos completos. El servicio es rápido y eficiente, lo que lo convierte en una excelente opción para una reunión rápida o para una larga sesión de estudio o trabajo. En general, The Coffee Academics es un lugar imprescindible para cualquier amante del café que visite Hong Kong.",
+                "lugar": "The Coffee Academics",
                 "foto":'../coffee3.jpg',
                 "createdAt": "2023-05-06T18:25:18.965Z",
                 "updatedAt": "2023-05-06T18:25:22.762Z",
