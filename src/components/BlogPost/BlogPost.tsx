@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import styles from './BlogPost.module.css'
-
+import { Link } from 'react-router-dom'
 import { animated , useSpring } from '@react-spring/web'
 
 interface BlogPostProps {
+  id:number,
   titulo:string,
   lugar:string,
   descripcion:string,
@@ -13,7 +14,7 @@ interface BlogPostProps {
   foto:string,
 }
 
-export const BlogPost = ({titulo,lugar,descripcion,conclusion,creado,creadoPor, foto}:BlogPostProps) => {
+export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPor, foto}:BlogPostProps) => {
 
   const [expanded, setExpanded] = useState(false)
   
@@ -50,6 +51,7 @@ export const BlogPost = ({titulo,lugar,descripcion,conclusion,creado,creadoPor, 
   }
   
   return (
+    <Link to={`/post/${id}`} style={{textDecoration: 'none', color: 'inherit'}}>
     <animated.div
         style={
           {
@@ -68,5 +70,6 @@ export const BlogPost = ({titulo,lugar,descripcion,conclusion,creado,creadoPor, 
           <p>{creadoPor}, {creado}.</p>
         </div>
     </animated.div>
+    </Link>
   )
 }

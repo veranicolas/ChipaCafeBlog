@@ -36,6 +36,7 @@ export const BlogContent = () => {
       {postData.data.map((post) => (
           <BlogPost
               key={post.id}
+              id={post.id}
               titulo={post.attributes.titulo}
               lugar={post.attributes.lugar}
               descripcion={post.attributes.descripcion}
