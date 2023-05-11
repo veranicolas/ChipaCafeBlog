@@ -12,7 +12,7 @@ export const BlogContent = () => {
       opacity:0
     },
     config:{
-      duration:600
+      duration:200
     }
   }))
 

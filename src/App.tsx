@@ -2,8 +2,8 @@ import { useEffect } from 'react'
 import styles from './App.module.css'
 
 import mockData from './mockData/mockData'
-import { BlogContent } from './components/BlogContent/BlogContent'
 import Header from './components/Header/Header'
+import { Outlet } from 'react-router-dom'
 
 const App = () => {
   
@@ -17,7 +17,7 @@ const App = () => {
         <div className={styles.appContainer}>
           <Header />
           <div className={styles.bodyContainer}>
-            <BlogContent/>
+            <Outlet />
           </div>
         </div>
       </div>
