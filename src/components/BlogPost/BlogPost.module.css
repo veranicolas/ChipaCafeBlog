@@ -22,11 +22,8 @@
 
         width: 60%;
 
-        transition: 1ms ease-in;
-
         > .conclusion{
             display: none;   
-            transition: 0.7s;
             padding: 0 20px;
         }
     }
@@ -37,8 +34,6 @@
 
         > .blogpostBody {
 
-            
-            
             >.conclusion{
                 display: block;
             }
