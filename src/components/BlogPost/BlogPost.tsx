@@ -108,8 +108,8 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
     >
         <img src={foto} height={190} width={190} style={{borderRadius:6, objectFit:'cover'}}/>
         <div className={styles.blogpostBody}>
-          <h2>{titulo}</h2>
-          <h3>Lugar: {lugar}</h3>
+          <h2 style={{width:'100%', textAlign:'left'}}>{titulo}</h2>
+          <h3 style={{width:'100%', textAlign:'left'}}>{lugar}</h3>
           <p >{descripcion}</p>
           {/* <p style={ expanded ? {display:'block'} : {display:'none'} }>{conclusion}</p> */}
           <animated.p style={{...conclusionAnimation }} className={expanded ? styles.display : styles.notDisplay}>{conclusion}</animated.p>

@@ -9,9 +9,6 @@ export const BlogContent = () => {
   const [springs, api] = useSpring(()=>({
     from:{
       opacity:0
-    },
-    config:{
-      duration:200
     }
   }))
 
