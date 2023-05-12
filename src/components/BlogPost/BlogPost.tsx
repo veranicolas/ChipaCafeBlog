@@ -51,7 +51,7 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
   }
   
   return (
-    <Link to={`/post/${id}`} style={{textDecoration: 'none', color: 'inherit'}}>
+    
     <animated.div
         style={
           {
@@ -68,8 +68,9 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
           <p >{descripcion}</p>
           <p style={ expanded ? {display:'block'} : {display:'none'}}>{conclusion}</p>
           <p>{creadoPor}, {creado}.</p>
+          <Link to={`/post/${id}`} style={{textDecoration: 'none', color: 'inherit'}}>Leer Más</Link>
         </div>
     </animated.div>
-    </Link>
+  
   )
 }
