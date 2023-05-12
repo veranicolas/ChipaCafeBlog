@@ -21,8 +21,10 @@ export const PostPage = () => {
       <h2 className={styles.lugar}>{post?.attributes.lugar}</h2>
       <p className={styles.postBody}>{post?.attributes.descripcion}</p>
       <p className={styles.conclusion}>{post?.attributes.conclusion}</p>
+      <div className={styles.pieDePost}>
       <h3 className={styles.creadoPor}>Autor: {post?.attributes.creadoPor}</h3>
       <Link className={styles.linkAtras} to={'/cafe'}>--- Volver a Posts ---</Link>
+      </div>
     </div>
     
   )
