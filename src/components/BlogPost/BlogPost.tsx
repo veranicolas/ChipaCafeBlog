@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import styles from './BlogPost.module.css'
+import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { animated , useSpring } from '@react-spring/web'
+
+import styles from './BlogPost.module.css'
  
 interface BlogPostProps {
   id:number,
@@ -16,11 +17,16 @@ interface BlogPostProps {
 
 export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPor, foto}:BlogPostProps) => {
 
+  const blogRef = useRef<null | HTMLDivElement>(null); 
   const [expanded, setExpanded] = useState(false)
-  
   const [springs, api] = useSpring(()=>({
     from:{
       height: 200
+    }
+  }))
+  const [conclusionAnimation,apiConclusion] = useSpring(()=>({
+    from:{
+      opacity:0
     }
   }))
 
@@ -30,10 +36,9 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
         height:200
       },
       to:{
-        height:400
+        height:500
       }
     })
-
     apiConclusion.start({
       from:{
         opacity:0,
@@ -52,13 +57,12 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
   const handleMouseLeave = ()=>{
     api.start({
       from:{
-        height:400
+        height:500
       },
       to:{
         height:200,
       }
     })
-    
     apiConclusion.start({
       from:{
         opacity:1,
@@ -75,32 +79,24 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
     },200);
   }
 
-  const [conclusionAnimation,apiConclusion] = useSpring(()=>({
-    from:{opacity:0}
-  }))
-
-  return (
-    
+  return (   
     <animated.div
-        style={
-          {
-            ...springs
-          }}
+        style={{...springs}}
         className={styles.blogpost}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        ref={blogRef}
     >
         <img src={foto} height={190} width={190} style={{borderRadius:6, objectFit:'cover'}}/>
         <div className={styles.blogpostBody}>
-          <h2 style={{width:'100%', textAlign:'left'}}>{titulo}</h2>
+          <h2 style={{width:'100%', textAlign:'left', fontWeight:100}}>{titulo}</h2>
           <h3 style={{width:'100%', textAlign:'left'}}>{lugar}</h3>
-          <p >{descripcion}</p>
+          <p style={{width:'100%', textAlign:'left', fontFamily:'Open Sans'}}>{descripcion}</p>
           {/* <p style={ expanded ? {display:'block'} : {display:'none'} }>{conclusion}</p> */}
-          <animated.p style={{...conclusionAnimation }} className={expanded ? styles.display : styles.notDisplay}>{conclusion}</animated.p>
+          <animated.p style={{...conclusionAnimation, fontFamily:'Open Sans' }} className={expanded ? styles.display : styles.notDisplay}>{conclusion}</animated.p>
           <p>{creadoPor}, {creado}.</p>
           <Link to={`/post/${id}`} style={{textDecoration: 'none', color: 'inherit'}}>Leer Más</Link>
         </div>
     </animated.div>
-  
   )
 }

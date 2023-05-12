@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
+import { animated, useSpring } from '@react-spring/web'
+
 import { BlogPost } from '../BlogPost/BlogPost';
 import postData from '../../mockData/mockData.ts';
-import { animated, useSpring } from '@react-spring/web'
+
 import styles from './BlogContent.module.css'
-import { useEffect } from 'react';
 
 export const BlogContent = () => {
   

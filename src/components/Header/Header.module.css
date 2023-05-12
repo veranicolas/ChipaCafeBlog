@@ -26,7 +26,7 @@
     width: 40%;
     
     > .customLink {
-      padding: 2vh;
+      padding: 2vh 0 2vh 2vh;
       line-height: 6vh;
       text-align: center;
       border-radius: 12px;

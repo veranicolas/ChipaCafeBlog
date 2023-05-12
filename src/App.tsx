@@ -1,9 +1,10 @@
 import { useEffect } from 'react'
-import styles from './App.module.css'
+import { Outlet } from 'react-router-dom'
 
 import mockData from './mockData/mockData'
 import Header from './components/Header/Header'
-import { Outlet } from 'react-router-dom'
+
+import styles from './App.module.css'
 
 const App = () => {
   
