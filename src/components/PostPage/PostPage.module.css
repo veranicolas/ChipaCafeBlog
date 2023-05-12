@@ -21,31 +21,33 @@
     justify-content: space-around;
     align-items: center;
     
-    height: auto;
-    
+    height: 75vh;
+    width: 75%;
 
     .title{
-        border-bottom: 10px;
-        font-size: 3rem;
-        margin-bottom: 10px;
+      border-bottom: 10px;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      
+      font-weight: 100;
     }
     .creadoFecha{
-        color:rgb(116, 116, 116)
+      color:rgb(116, 116, 116)
     }
     .postBody{
-        justify-content: flex-start;
-        align-items: flex-start;
-    
-        margin-top: 30px;
-        margin-bottom: 30px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-family: 'Open Sans';
+      margin-top: 30px;
+      margin-bottom: 30px;
 
     }
     .conclusion{
-        
+      font-family: 'Open Sans';
     }
     .creadoPor{
-        margin-top: 30px;
-        margin-bottom: 20px;
+      margin-top: 30px;
+      margin-bottom: 20px;
     }
 }
 .linkAtras{
