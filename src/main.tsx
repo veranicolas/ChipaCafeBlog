@@ -9,6 +9,7 @@ import { NosotrosPage } from './components/NosotrosPage/NosotrosPage.tsx'
 import { ErrorPage } from './components/ErrorPage/ErrorPage.tsx'
 import { BlogContent } from './components/BlogContent/BlogContent.tsx'
 import Index from './components/Index/Index.tsx'
+import { PostPage } from './components/PostPage/PostPage.tsx'
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/nosotros",
         element: <NosotrosPage/>
+      },
+      {
+        path: "/post/:id",
+        element: <PostPage/>
       }
     ]
   },

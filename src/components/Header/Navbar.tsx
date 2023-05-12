@@ -1,16 +1,17 @@
 import styles from './Header.module.css'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div className={styles.navbarComponent}>
             <div className={styles.customLink}>
-                <a href="/cafe">Cafe</a>
+                <Link to="/cafe">Cafe</Link>
             </div>
             <div className={styles.customLink}>
-                <a href="/chipa">Chipa</a>
+                <Link to="/chipa">Chipa</Link>
             </div>
             <div className={styles.customLink}>
-                <a href="/nosotros">Nosotros</a>
+                <Link to="/nosotros">Nosotros</Link>
             </div>
         </div>
     )
