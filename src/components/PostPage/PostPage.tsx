@@ -19,11 +19,12 @@ export const PostPage = () => {
       <i className={styles.creadoFecha}>{post?.attributes.creado}</i>
       <h1 className={styles.title}>{post?.attributes.titulo}</h1>
       <h2 className={styles.lugar}>{post?.attributes.lugar}</h2>
-      <p className={styles.postBody} style={{width:'100%', textAlign:'left'}}>{post?.attributes.descripcion}</p>
-      <p className={styles.conclusion} style={{width:'100%', textAlign:'left'}}>{post?.attributes.conclusion}</p>
+      <p className={styles.postBody}>{post?.attributes.descripcion}</p>
+      <p className={styles.conclusion}>{post?.attributes.conclusion}</p>
+      <div className={styles.pieDePost}>
       <h3 className={styles.creadoPor}>Autor: {post?.attributes.creadoPor}</h3>
       <Link className={styles.linkAtras} to={'/cafe'}>--- Volver a Posts ---</Link>
+      </div>
     </div>
-    
   )
 }
