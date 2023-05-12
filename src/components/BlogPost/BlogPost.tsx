@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from './BlogPost.module.css'
 import { Link } from 'react-router-dom'
 import { animated , useSpring } from '@react-spring/web'
-
+ 
 interface BlogPostProps {
   id:number,
   titulo:string,
@@ -34,6 +34,18 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
       }
     })
 
+    apiConclusion.start({
+      from:{
+        opacity:0,
+      },
+      to:{
+        opacity:1,
+      },
+      config: {
+        duration:500,
+      }
+    })
+
     setExpanded(true)
   }
 
@@ -43,13 +55,46 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
         height:400
       },
       to:{
-        height:200
+        height:200,
       }
     })
-
-    setExpanded(false)
+    
+    apiConclusion.start({
+      from:{
+        opacity:1,
+      },
+      to:{
+        opacity:0,
+      },
+      config: {
+        duration:200,
+      }
+    })
+    setTimeout(()=>{
+      setExpanded(false)
+    },200);
   }
   
+  // useEffect(()=>{
+  //   apiConclusion.start({
+  //     from:{
+  //       opacity:0,
+  //     },
+  //     to:{
+  //       opacity:1,
+  //     },
+  //     config: {
+  //       duration:500,
+  //     }
+  //   })
+  // },[expanded])
+
+  const [conclusionAnimation,apiConclusion] = useSpring(()=>({
+    // opacity: expanded ? 1 : 0
+    from:{opacity:0}
+    
+  }))
+
   return (
     
     <animated.div
@@ -66,7 +111,8 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
           <h2 style={{width:'100%', textAlign:'left'}}>{titulo}</h2>
           <h3 style={{width:'100%', textAlign:'left'}}>{lugar}</h3>
           <p >{descripcion}</p>
-          <p style={ expanded ? {display:'block'} : {display:'none'}}>{conclusion}</p>
+          {/* <p style={ expanded ? {display:'block'} : {display:'none'} }>{conclusion}</p> */}
+          <animated.p style={{...conclusionAnimation }} className={expanded ? styles.display : styles.notDisplay}>{conclusion}</animated.p>
           <p>{creadoPor}, {creado}.</p>
           <Link to={`/post/${id}`} style={{textDecoration: 'none', color: 'inherit'}}>Leer Más</Link>
         </div>
