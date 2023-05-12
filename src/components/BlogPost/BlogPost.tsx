@@ -71,12 +71,12 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
         opacity:0,
       },
       config: {
-        duration:200,
+        duration:100,
       }
     })
     setTimeout(()=>{
       setExpanded(false)
-    },200);
+    },100);
   }
 
   return (   
