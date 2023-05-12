@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import styles from './BlogPost.module.css'
 import { Link } from 'react-router-dom'
 import { animated , useSpring } from '@react-spring/web'
@@ -74,25 +74,9 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
       setExpanded(false)
     },200);
   }
-  
-  // useEffect(()=>{
-  //   apiConclusion.start({
-  //     from:{
-  //       opacity:0,
-  //     },
-  //     to:{
-  //       opacity:1,
-  //     },
-  //     config: {
-  //       duration:500,
-  //     }
-  //   })
-  // },[expanded])
 
   const [conclusionAnimation,apiConclusion] = useSpring(()=>({
-    // opacity: expanded ? 1 : 0
     from:{opacity:0}
-    
   }))
 
   return (
