@@ -1,4 +1,20 @@
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 .postContainer{
+    margin-top: 50px;
+    animation: 0.4s ease-out 0s 1 slideInFromLeft, fadeIn 1s;
     padding: 0 15px;
     display: flex;
     flex-direction: column;
@@ -27,5 +43,14 @@
     .conclusion{
         
     }
-    
+    .creadoPor{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+.linkAtras{
+    animation: 1s ease-out 0s 1 slideInFromLeft, fadeIn 3s;
+    text-decoration: none;
+    color: inherit;
+    font-style: italic;
 }
