@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import postData from '../../mockData/mockData';
+import postData from '../../mockData/mockCafeData';
 import styles from './PostPage.module.css';
 
 

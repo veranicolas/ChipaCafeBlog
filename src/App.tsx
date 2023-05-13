@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 
-import mockData from './mockData/mockData'
+import mockData from './mockData/mockCafeData'
 import Header from './components/Header/Header'
 
 import styles from './App.module.css'
