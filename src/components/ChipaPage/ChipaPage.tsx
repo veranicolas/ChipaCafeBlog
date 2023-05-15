@@ -1,9 +1,11 @@
+import { BlogContent } from "../BlogContent/BlogContent"
+
+import mockChipaData from "../../mockData/mockChipaData"
 
 export const ChipaPage = () => {
   return (
     <>
-    <div>ChipaPage</div>
-    <a href="/">Home</a>
+    <BlogContent postData={mockChipaData} type="chipa" />
     </>
   )
 }

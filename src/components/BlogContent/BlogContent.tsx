@@ -2,11 +2,10 @@ import { useEffect } from 'react';
 import { animated, useSpring } from '@react-spring/web'
 
 import { BlogPost } from '../BlogPost/BlogPost';
-import postData from '../../mockData/mockCafeData.ts';
 
 import styles from './BlogContent.module.css'
 
-export const BlogContent = () => {
+export const BlogContent = ({postData, type}:any) => {
   
   const [springs, api] = useSpring(()=>({
     from:{
@@ -31,17 +30,18 @@ export const BlogContent = () => {
         ...springs
       }}
       className={styles.blogpostContainer}>
-      {postData.data.map((post) => (
+      {postData.data.map((post:any) => (
           <BlogPost
-              key={post.id}
-              id={post.id}
-              titulo={post.attributes.titulo}
-              lugar={post.attributes.lugar}
-              descripcion={post.attributes.descripcion}
-              conclusion={post.attributes.conclusion}
-              creado={post.attributes.creado}
-              creadoPor={post.attributes.creadoPor}
-              foto={post.attributes.foto}
+            type={type}
+            key={post.id}
+            id={post.id}
+            titulo={post.attributes.titulo}
+            lugar={post.attributes.lugar}
+            descripcion={post.attributes.descripcion}
+            conclusion={post.attributes.conclusion}
+            creado={post.attributes.creado}
+            creadoPor={post.attributes.creadoPor}
+            foto={post.attributes.foto}
           />
           
       ))}

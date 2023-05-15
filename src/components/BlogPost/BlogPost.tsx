@@ -13,9 +13,10 @@ interface BlogPostProps {
   creado:string,
   creadoPor:string,
   foto:string,
+  type:string
 }
 
-export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPor, foto}:BlogPostProps) => {
+export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPor, foto, type}:BlogPostProps) => {
 
   const blogRef = useRef<null | HTMLDivElement>(null); 
   const [expanded, setExpanded] = useState(false)
@@ -95,7 +96,7 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
           {/* <p style={ expanded ? {display:'block'} : {display:'none'} }>{conclusion}</p> */}
           <animated.p style={{...conclusionAnimation, fontFamily:'Open Sans' }} className={expanded ? styles.display : styles.notDisplay}>{conclusion}</animated.p>
           <p>{creadoPor}, {creado}.</p>
-          <Link to={`/post/${id}`} style={{textDecoration: 'none', color: 'inherit'}}>Leer Más</Link>
+          <Link to={`/${type}/${id}`} style={{textDecoration: 'none', color: 'inherit'}}>Leer Más</Link>
         </div>
     </animated.div>
   )

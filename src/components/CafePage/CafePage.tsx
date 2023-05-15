@@ -1,10 +1,11 @@
+import { BlogContent } from "../BlogContent/BlogContent"
 
+import mockCafeData from "../../mockData/mockCafeData"
 
 export const CafePage = () => {
   return (
     <>
-    <div>CafePage</div>
-    <a href="/">Home</a>
+      <BlogContent postData={mockCafeData} type="cafe" />
     </>
   )
 }
