@@ -1,9 +1,22 @@
 
+import styles from './Index.module.css'
+
+const Carrousel = () =>{
+
+    return(
+        <div className={styles.carrouselContainer}>
+
+        </div>
+    )
+}
+
 const Index = () => {
+
+    document.title = "CafeChipa MDP"
+
     return (
-        <div style={{margin:'2vw'}}>
-            <h2>Bienvenido!</h2>
-            <p style={{fontSize:20}}>Somos CafeChipa MDP</p>
+        <div className={styles.indexContainer}>
+            <Carrousel />
         </div>
     );
 };
