@@ -1,0 +1,22 @@
+
+.content{
+    padding: 0 1vw;
+    height: 70vh;
+
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+
+    > .peopleCards{
+
+        height: 85%;
+        width: 100%;
+        display: flex;
+       
+        > .people{
+           border: 1px solid;
+           padding: 20px;
+           width: 28%;
+        }
+    }
+}
