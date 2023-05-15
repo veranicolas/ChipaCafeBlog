@@ -28,14 +28,17 @@ export const PostPage = () => {
 
   return (
     <div className={styles.postContainer}>
-      <img src={post.attributes.foto} height={300} width={750} style={{objectFit:'cover', borderRadius:8}}/>
-      <i className={styles.creadoFecha}>{post?.attributes.creado}</i>
+      <img src={post.attributes.foto} style={{width:'100%', height:'350px',objectFit:'cover', borderRadius:8}}/>
+      
       <h1 className={styles.title}>{post?.attributes.titulo}</h1>
       <h2 className={styles.lugar}>{post?.attributes.lugar}</h2>
       <p className={styles.postBody}>{post?.attributes.descripcion}</p>
       <p className={styles.conclusion}>{post?.attributes.conclusion}</p>
       <div className={styles.pieDePost}>
-      <h3 className={styles.creadoPor}>Autor: {post?.attributes.creadoPor}</h3>
+      <h3 className={styles.creadoPor}>
+        {post?.attributes.creadoPor}, 
+        <i className={styles.creadoFecha}> {post?.attributes.creado}</i>
+      </h3>
       <div onClick={handleBackToPosts} className={styles.linkAtras}>--- Volver a Posts ---</div>
       </div>
     </div>
