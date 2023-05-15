@@ -1,16 +1,29 @@
-import { Link, useParams } from "react-router-dom";
-import postData from '../../mockData/mockData';
-import styles from './PostPage.module.css';
+import { useParams } from "react-router-dom";
 
+import mockChipaData from "../../mockData/mockChipaData";
+import mockCafeData from "../../mockData/mockCafeData";
+
+import styles from './PostPage.module.css';
 
 export const PostPage = () => {
   const { id } = useParams<{ id: string }>();
   const postId = parseInt(id!,10);
-  const post = postData.data.find((post) => post.id === postId);
-  console.log(post);
+  let post;
+
+  const chipaRegex = new RegExp('chipa')
+
+  if(chipaRegex.test(window.location.pathname)){
+    post = mockChipaData.data.find((post) => post.id === postId);
+  } else {
+    post = mockCafeData.data.find((post)=> post.id === postId);
+  }
 
   if (!post) {
     return <div>Post no encontrado!</div>;
+  }
+
+  const handleBackToPosts = () =>{
+    history.back()
   }
 
   return (
@@ -23,7 +36,7 @@ export const PostPage = () => {
       <p className={styles.conclusion}>{post?.attributes.conclusion}</p>
       <div className={styles.pieDePost}>
       <h3 className={styles.creadoPor}>Autor: {post?.attributes.creadoPor}</h3>
-      <Link className={styles.linkAtras} to={'/cafe'}>--- Volver a Posts ---</Link>
+      <div onClick={handleBackToPosts} className={styles.linkAtras}>--- Volver a Posts ---</div>
       </div>
     </div>
   )

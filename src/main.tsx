@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-// import { CafePage } from './components/CafePage/CafePage.tsx'
+
 import { ChipaPage } from './components/ChipaPage/ChipaPage.tsx'
 import { NosotrosPage } from './components/NosotrosPage/NosotrosPage.tsx'
 import { ErrorPage } from './components/ErrorPage/ErrorPage.tsx'
-import { BlogContent } from './components/BlogContent/BlogContent.tsx'
 import Index from './components/Index/Index.tsx'
 import { PostPage } from './components/PostPage/PostPage.tsx'
+import { CafePage } from './components/CafePage/CafePage.tsx'
 
 const router = createBrowserRouter([
   {
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/cafe",
-        element: <BlogContent />
+        element: <CafePage />
       },
       {
         path: "/chipa",
@@ -34,8 +34,12 @@ const router = createBrowserRouter([
         element: <NosotrosPage/>
       },
       {
-        path: "/post/:id",
+        path: "/cafe/:id",
         element: <PostPage/>
+      },
+      {
+        path: "/chipa/:id",
+        element: <PostPage />
       }
     ]
   },

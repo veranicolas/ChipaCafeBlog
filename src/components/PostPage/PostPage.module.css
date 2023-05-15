@@ -68,6 +68,7 @@
             text-decoration: none;
             color: inherit;
             font-style: italic;
+            cursor: pointer;
         }
     }
 }
