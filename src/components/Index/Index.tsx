@@ -4,7 +4,6 @@ import { useTransition, animated, useSpring } from '@react-spring/web';
 import styles from './Index.module.css'
 import fotos from './fotos';
 
-
 const Carrousel = () =>{
 
     const [index, setIndex] = useState(0)
@@ -19,7 +18,6 @@ const Carrousel = () =>{
         },
         exitBeforeEnter:true
     })
-
     const hoverSpring = useSpring({
         transform: isHovered ? 'scale(1.02)' : 'scale(1)',
         config:{
