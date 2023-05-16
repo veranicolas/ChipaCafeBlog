@@ -8,8 +8,20 @@
     flex-direction: column;
 
     > .carrouselContainer{
-        height: 50%;
+        height: 65%;
         width: 100%;
-        border: 1px solid;
+    }
+
+    > .textoIntroductorio{
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        > h2, p {
+            width: 100%;
+            text-align: left;
+        }
     }
 }
