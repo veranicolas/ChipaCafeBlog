@@ -3,6 +3,9 @@ import styles from './NosotrosPage.module.css'
 import fotos from './fotos'
 
 export const NosotrosPage = () => {
+
+  document.title = "Nosotros - CafeChipa MDP"
+
   return (
     <>
      <div className={styles.content}>
