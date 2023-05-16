@@ -19,7 +19,12 @@
         flex-direction: column;
         justify-content: space-evenly;
 
-        > h2, p {
+        > p {
+            width: 100%;
+            text-align: left;
+        }
+
+        > h2 {
             width: 100%;
             text-align: left;
         }
