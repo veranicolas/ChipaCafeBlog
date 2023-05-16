@@ -9,11 +9,11 @@
 
     > .carrouselContainer{
         height: 65%;
-        width: 100%;
+        width: 80%;
     }
 
     > .textoIntroductorio{
-        width: 100%;
+        width: 80%;
         height: 35%;
         display: flex;
         flex-direction: column;
