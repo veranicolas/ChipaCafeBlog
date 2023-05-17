@@ -33,13 +33,17 @@ export const PostPage = () => {
       <h1 className={styles.title}>{post?.attributes.titulo}</h1>
       <h2 className={styles.lugar}>{post?.attributes.lugar}</h2>
       <p className={styles.postBody}>{post?.attributes.descripcion}</p>
+      <p className={styles.postBody}>{post?.attributes.cuerpo1}</p>
+      {
+        post.attributes.cuerpo2 ? <p className={styles.postBody}>{post?.attributes.cuerpo2}</p> : null
+      }
       <p className={styles.conclusion}>{post?.attributes.conclusion}</p>
       <div className={styles.pieDePost}>
-      <h3 className={styles.creadoPor}>
-        {post?.attributes.creadoPor}, 
-        <i className={styles.creadoFecha}> {post?.attributes.creado}</i>
-      </h3>
-      <div onClick={handleBackToPosts} className={styles.linkAtras}>--- Volver a Posts ---</div>
+        <h3 className={styles.creadoPor}>
+          {post?.attributes.creadoPor}, 
+          <i className={styles.creadoFecha}> {post?.attributes.creado}</i>
+        </h3>
+        <div onClick={handleBackToPosts} className={styles.linkAtras}>--- Volver a Posts ---</div>
       </div>
     </div>
   )
