@@ -49,7 +49,7 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
           <h3 style={{width:'100%', textAlign:'left'}}>{lugar}</h3>
           <p style={{width:'100%', textAlign:'left', fontFamily:'Open Sans'}}>{descripcion}</p>
           <p style={{ fontFamily:'Open Sans' }} className={styles.conclusion}>{conclusion}</p>
-          <p>{creadoPor}, {creado}.</p>
+          <p>{creadoPor}, {creado}</p>
         </div>
     </animated.div>
        </Link>
