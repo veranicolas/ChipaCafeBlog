@@ -37,21 +37,21 @@ export const BlogPost = ({id,titulo,lugar,descripcion,conclusion,creado,creadoPo
 
 
   return (   
+    <Link to={`/${type}/${id}`} style={{textDecoration: 'none', color: 'inherit'}}>
     <animated.div
-    style={{...hoverSpring}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+        style={{...hoverSpring}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
         className={styles.blogpost}
         ref={blogRef}
     >
-        <img src={foto} height={190} width={190} style={{borderRadius:6, objectFit:'cover'}}/>
+        <img className={styles.blogpostImage} src={foto} height={190} width={190} style={{borderRadius:6, objectFit:'cover'}}/>
         <div className={styles.blogpostBody}>
           <h2 style={{width:'100%', textAlign:'left', fontWeight:100}}>{titulo}</h2>
           <h3 style={{width:'100%', textAlign:'left'}}>{lugar}</h3>
           <p style={{width:'100%', textAlign:'left', fontFamily:'Open Sans'}}>{descripcion}</p>
-          {/* <p style={ expanded ? {display:'block'} : {display:'none'} }>{conclusion}</p> */}
           <p style={{ fontFamily:'Open Sans' }} className={styles.conclusion}>{conclusion}</p>
           <p>{creadoPor}, {creado}.</p>
-          <Link to={`/${type}/${id}`} style={{textDecoration: 'none', color: 'inherit'}}>Leer Más</Link>
         </div>
     </animated.div>
+       </Link>
   )
 }
