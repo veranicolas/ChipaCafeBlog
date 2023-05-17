@@ -29,15 +29,9 @@
     }
 
     &:hover{
+        
 
-        height: 45vh;
 
-        > .blogpostBody {
-
-            >.conclusion{
-                display: block;
-            }
-        }
     }
 }
 .display{
