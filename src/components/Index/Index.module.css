@@ -31,3 +31,42 @@
         }
     }
 }
+
+@media only screen and (max-width:426px){
+    
+    .indexContainer{
+
+       
+        padding-bottom: 100px;
+
+        > .carrouselContainer{
+            height: 50%;
+            width: 100%;
+            min-height: 50%;
+            margin-bottom: 0px;
+        }
+
+        > .textoIntroductorio{
+            width: 90%;
+            height: 10000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 2vh;
+            
+            > p {
+                width: 95%;
+                text-align: left;
+                font-size: 1.3em;
+                padding-top:10px
+            }
+            
+            > h2 {
+                width: 100%;
+                text-align: left;
+                padding: 10px;
+                font-size: 2.5em;
+            }
+        }
+    } 
+}
