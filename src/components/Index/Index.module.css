@@ -121,9 +121,7 @@
 @media  screen and (min-width:769px) and (max-width: 1024px) {
 
     .indexContainer{
-
         height: auto;
-        padding-bottom: 5vh;
 
         > .carrouselContainer{
             height: 40vh !important;
@@ -162,11 +160,79 @@
 /* Desktops, large screens */
 @media  screen and (min-width:1025px) and (max-width: 1200px) {
 
+    .indexContainer{
+        height: auto;
 
+        > .carrouselContainer{
+            height: 50vh !important;
+            width: 90%;
+            
+            > .carrouselImage{
+                height:50vh !important;
+            }
+        }
+
+        > .textoIntroductorio{
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 2vh;
+            
+            > p {
+                width: 98%;
+                text-align: left;
+                font-size: 1.2em;
+                padding-top:10px
+            }
+            
+            > h2 {
+                width: 100%;
+                text-align: left;
+                font-weight: 100;
+                font-size: 2.5em;
+            }
+        }
+    } 
 }
 
 /* Extra large screens, TV */
 @media  screen and (min-width:1201px) {
 
+    .indexContainer{
+        height: auto;
 
+        > .carrouselContainer{
+            height: 50vh !important;
+            width: 90%;
+            
+            > .carrouselImage{
+                height:50vh !important;
+            }
+        }
+
+        > .textoIntroductorio{
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 2vh;
+            
+            > p {
+                width: 98%;
+                text-align: left;
+                font-size: 1.125rem;
+                padding-top:10px
+            }
+            
+            > h2 {
+                width: 100%;
+                text-align: left;
+                font-weight: 100;
+                font-size: 2.75rem;
+            }
+        }
+    } 
 }

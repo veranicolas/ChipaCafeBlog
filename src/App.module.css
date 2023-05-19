@@ -71,13 +71,31 @@
 /* Desktops, large screens */
 @media  screen and (min-width:1025px) and (max-width: 1200px) {
   
-  
+  .appContainer{ 
+    
+    width: 100%;
+    height: auto;
+  }
+  .bodyContainer{
+    margin-top: 2vh;
+    height: auto;
+  }
 }
 
 /* Extra large screens, TV */
 @media  screen and (min-width:1201px) {
   
-  
+  .appContainer{ 
+    
+    width: 100%;
+    height: auto;
+  }
+  .bodyContainer{
+    
+    width: 70%;
+    margin-top: 2vh;
+    height: auto;
+  }
 }
 
 /* responsive breakpoints 
