@@ -43,7 +43,15 @@
 /* iPads, Tablets */
 @media  screen and (min-width:481px) and (max-width: 768px) {
   
-  
+  .appContainer{ 
+    
+    width: 100%;
+    height: auto;
+  }
+  .bodyContainer{
+    margin-top: 2vh;
+    height: auto;
+  }
 }
 
 /* Small screens, laptops */
