@@ -24,3 +24,66 @@
   width: 0;  /* Remove scrollbar space */
   background: transparent;  /* Optional: just make scrollbar invisible */
 }
+
+/* Mobile devices */
+@media  screen and (min-width:320px) and (max-width: 480px) {
+  
+  .appContainer{ 
+    
+    width: 100%;
+    height: auto;
+  }
+  .bodyContainer{
+    margin-top: 2vh;
+    height: auto;
+  }
+
+}
+
+/* iPads, Tablets */
+@media  screen and (min-width:481px) and (max-width: 768px) {
+  
+  .appContainer{ 
+    
+    width: 100%;
+    height: auto;
+  }
+  .bodyContainer{
+    margin-top: 2vh;
+    height: auto;
+  }
+}
+
+/* Small screens, laptops */
+@media  screen and (min-width:769px) and (max-width: 1024px) {
+  
+  .appContainer{ 
+    
+    width: 100%;
+    height: auto;
+  }
+  .bodyContainer{
+    margin-top: 2vh;
+    height: auto;
+  }
+}
+
+/* Desktops, large screens */
+@media  screen and (min-width:1025px) and (max-width: 1200px) {
+  
+  
+}
+
+/* Extra large screens, TV */
+@media  screen and (min-width:1201px) {
+  
+  
+}
+
+/* responsive breakpoints 
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+*/
