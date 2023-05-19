@@ -5,15 +5,24 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 
+const HamburguerMenu = () =>{
+
+    return(
+        <div className={styles.hamburguerMenu}>
+            <FontAwesomeIcon icon={faBars} size="2xl"/>
+        </div>
+    )
+}
+
 const Header = () => {
 
-    const [isVisible, setVisible] = useState(window.innerWidth >= 480 ? true : false)
+    const [isVisible, setVisible] = useState(window.innerWidth >= 768 ? true : false)
 
     // Esto lo que hace es agregar un evento en el dom, que cuando la pantalla cambia de tamaño a mas chico que 480 que se oculte la navbar, y que si es mas grande que eso que la muestre. 
     useEffect(()=>{
         
         const setNavbarVisible = () =>{
-            if(window.innerWidth <= 479) {
+            if(window.innerWidth <= 767) {
                 setVisible(false)
             } else {
                 setVisible(true)
@@ -34,7 +43,7 @@ const Header = () => {
                 <Link style={{textDecoration:'none', color:'black'}} to="/">CafeChipa MDP</Link>
             </div>
             {
-                isVisible ? <Navbar /> : <FontAwesomeIcon icon={faBars} />
+                isVisible ? <Navbar /> : <HamburguerMenu />
             }
         </div>
     );
