@@ -34,9 +34,11 @@ const IndividuoComponent = ({individuo}:IndividuoProps) =>{
 
   return(
     <animated.div style={{...hoverSpring}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={styles.people}>
-      <img src={foto} height={200} width={200}/>
-      <h3 style={{textAlign:'center', fontFamily:'Roboto'}}>{nombre}</h3>
-      <p style={{padding: '1vh 2vh'}}>{descripcion}</p>
+        <div className={styles.imageAndName}>
+          <img src={foto} height={200} width={200}/>
+          <h3 style={{textAlign:'center', fontFamily:'Roboto'}}>{nombre}</h3>
+        </div>
+      <p className={styles.bio} >{descripcion}</p>
     </animated.div>
   )
 }
