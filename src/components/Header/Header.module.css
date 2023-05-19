@@ -54,7 +54,7 @@
 @media only screen and (min-width:320px) and (max-width: 480px){
   .headerContainer{
     height:9vh;
-    width: 85%;
+    width: 90%;
     
     >.title{
       font-size: 1.3em;
@@ -73,7 +73,7 @@
   
   .headerContainer{
     height:9vh;
-    width: 85%;
+    width: 90%;
     
     >.title{
       font-size: 1.3em;

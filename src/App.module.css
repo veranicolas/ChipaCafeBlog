@@ -57,7 +57,15 @@
 /* Small screens, laptops */
 @media  screen and (min-width:769px) and (max-width: 1024px) {
   
-  
+  .appContainer{ 
+    
+    width: 100%;
+    height: auto;
+  }
+  .bodyContainer{
+    margin-top: 2vh;
+    height: auto;
+  }
 }
 
 /* Desktops, large screens */
