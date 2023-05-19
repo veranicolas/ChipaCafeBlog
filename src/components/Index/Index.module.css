@@ -32,39 +32,41 @@
     }
 }
 
-@media only screen and (max-width:426px){
+@media only screen and (min-width:320px) and (max-width: 480px){
     
     .indexContainer{
 
-       
-        padding-bottom: 100px;
+        height: auto;
+        padding-bottom: 5vh;
 
         > .carrouselContainer{
-            height: 50%;
-            width: 100%;
-            min-height: 50%;
-            margin-bottom: 0px;
+            height: 25vh;
+            width: 90%;
+            
+            > .carrouselImage{
+                height:25vh !important;
+            }
         }
 
         > .textoIntroductorio{
             width: 90%;
-            height: 10000px;
+            height: auto;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             margin-top: 2vh;
             
             > p {
-                width: 95%;
+                width: 98%;
                 text-align: left;
-                font-size: 1.3em;
+                font-size: 1.2em;
                 padding-top:10px
             }
             
             > h2 {
                 width: 100%;
                 text-align: left;
-                padding: 10px;
+                font-weight: 100;
                 font-size: 2.5em;
             }
         }

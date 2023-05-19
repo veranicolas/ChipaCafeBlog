@@ -56,6 +56,7 @@ const Carrousel = () =>{
                     backgroundSize:'cover',
                     cursor:'pointer'
                 }}
+                className={styles.carrouselImage}
              />
         </div>
     ))
