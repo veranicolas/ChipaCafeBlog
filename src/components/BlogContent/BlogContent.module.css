@@ -4,3 +4,10 @@
     flex-direction: column;
     height: auto;
 }
+
+@media  screen and (min-width:1025px) and (max-width: 1200px) {
+
+    .blogpostContainer{
+        
+    }
+}
