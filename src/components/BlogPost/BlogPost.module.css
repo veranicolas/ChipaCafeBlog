@@ -33,31 +33,33 @@
     padding:4vw;
     margin: 5px;
     border-radius: 10px;
+    flex-direction: column;
 
     .blogpostImg[style]{
-      height:150px;
+      height:100px;
       width:100px;
     }
     .blogpostBody{
-      width:60%;
+      display: flex;
+      flex-direction: row;
+      width:100%;
       font-size: 1em;
       text-align: left;
       /* background-color: rgb(227, 227, 227) */
       border-radius: 6px;
       padding: 0vw;
-      justify-content: space-around;
+      justify-content: space-between;
       .titulo{
         /* height:auto; */
         font-size: 1.2em;
-      }
-      .descripcion{
-        /* display: none; */
-        font-size: 0.7rem;
       }
       .autor{
         display: none;
         font-size: 0.8em;
       }
+    }
+    .descripcion{
+      padding: 2vh 0 0;
     }
   }
 }
@@ -66,13 +68,20 @@
   .blogpost{
     width: 80vw;
     padding:3vw;
+    flex-direction: column;
     .blogpostBody{
-      width:60%;
+      display: flex;
+      flex-direction: row;
+      width:100%;
       font-size: 0.9em;
       .blogpostImg{
         height:100px;
         width:100px;
+        margin: 0;
       }
+    }
+    .descripcion{
+      padding: 2vh 0 0;
     }
   }
   
