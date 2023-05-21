@@ -13,7 +13,7 @@ const MobileNavbarMenu = ({isOpen, handleMenu}:any) =>{
     const displayAnimation = useSpring({
         opacity: 1, 
         from: { opacity: 0 }, 
-        config: { duration: 500 }
+        config: { duration: 50 }
     });
 
     const hideAnimation = useSpring({
