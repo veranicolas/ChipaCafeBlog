@@ -28,7 +28,7 @@ export const PostPage = () => {
 
   return (
     <div className={styles.postContainer}>
-      <img src={post.attributes.foto} style={{width:'100%', height:'250px',objectFit:'cover', borderRadius:8}}/>
+      <img className={styles.imagen}  src={post.attributes.foto} />
       
       <h1 className={styles.title}>{post?.attributes.titulo}</h1>
       <h2 className={styles.lugar}>{post?.attributes.lugar}</h2>

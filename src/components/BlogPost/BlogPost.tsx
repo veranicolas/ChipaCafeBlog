@@ -21,7 +21,7 @@ export const BlogPost = ({id,titulo,lugar,descripcion,creado,creadoPor, foto, ty
 
   const blogRef = useRef<null | HTMLDivElement>(null); 
   const [isHovered, setHover] = useState(false)
-  const [isVisible, setVisible] = useState(true)
+  const [isVisible, setVisible] = useState(window.innerWidth >= 768 ? true : false)
   const hoverSpring = useSpring({
     transform: isHovered ? 'scale(1.02)' : 'scale(1)',
     config:{
