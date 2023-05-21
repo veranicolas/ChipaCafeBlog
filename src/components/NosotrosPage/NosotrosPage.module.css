@@ -8,6 +8,11 @@
     display: flex;
     justify-content: space-around;
 
+    .titulo{
+        padding-top:15px;
+        font-weight: 200;
+        font-size: 2.75rem;
+    }
     > .peopleCards{
         flex-direction: column;
         height: auto;
@@ -64,6 +69,10 @@
     .content{
         padding-top: 10px;
         height: auto;
+
+        .titulo{
+            font-size: 2rem;
+        }
         .peopleCards{
             flex-direction: column;
             
@@ -124,6 +133,10 @@
     .content{
         padding-top: 10px;
         height: auto;
+
+        .titulo{
+            font-size: 2.3rem;
+        }
         .peopleCards{
             flex-direction: column;
             

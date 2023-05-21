@@ -50,7 +50,7 @@ export const NosotrosPage = () => {
   return (
     <>
      <div className={styles.content}>
-        <h2 style={{fontWeight:100}}>Sobre nosotros</h2>
+        <h2 className={styles.titulo} >Sobre nosotros</h2>
         <div className={styles.peopleCards}>
           <IndividuoComponent individuo={nosotros.vera}/>
           <IndividuoComponent individuo={nosotros.napo}/>
