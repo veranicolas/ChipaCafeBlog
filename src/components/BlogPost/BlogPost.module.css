@@ -69,11 +69,17 @@
     width: 80vw;
     padding:3vw;
     flex-direction: column;
+    
     .blogpostBody{
       display: flex;
       flex-direction: row;
       width:100%;
       font-size: 0.9em;
+      .titulo{
+        /* height:auto; */
+        font-size: 1.4em;
+      }
+
       .blogpostImg{
         height:100px;
         width:100px;

@@ -21,7 +21,7 @@ export const BlogPost = ({id,titulo,lugar,descripcion,creado,creadoPor, foto, ty
 
   const blogRef = useRef<null | HTMLDivElement>(null); 
   const [isHovered, setHover] = useState(false)
-  const [isVisible, setVisible] = useState(false)
+  const [isVisible, setVisible] = useState(true)
   const hoverSpring = useSpring({
     transform: isHovered ? 'scale(1.02)' : 'scale(1)',
     config:{
@@ -79,7 +79,6 @@ export const BlogPost = ({id,titulo,lugar,descripcion,creado,creadoPor, foto, ty
                 <div style={{width:'60%'}}>
                   <h2 className={styles.titulo} style={{ width: '100%', textAlign: 'left', fontWeight: 100 }}>{titulo}</h2>
                   <h3 style={{ width: '100%', textAlign: 'left' }}>{lugar}</h3>
-                  
                   <p className={styles.autor}>{creadoPor}, {creado}</p>
                 </div>
                 

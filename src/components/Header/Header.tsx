@@ -52,7 +52,7 @@ const Header = () => {
     useEffect(()=>{
         
         const setNavbarVisible = () =>{
-            if(window.innerWidth <= 767) {
+            if(window.innerWidth <= 768) {
                 setVisible(false)
             } else {
                 setVisible(true)
