@@ -4,7 +4,7 @@ const useResizeScreen = (activo:boolean) => {
     
     const screenWidth = window.innerWidth
 
-    const [estado, setEstado] = useState<boolean>(false)
+    const [estado, setEstado] = useState<boolean>(activo)
     useEffect(()=>{
         
         const setNavbarVisible = () =>{
