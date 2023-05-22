@@ -43,7 +43,12 @@ export const PostPage = () => {
           {post?.attributes.creadoPor}, 
           <i className={styles.creadoFecha}> {post?.attributes.creado}</i>
         </h3>
-        <div onClick={handleBackToPosts} className={styles.linkAtras}>--- Volver a Posts ---</div>
+        <div 
+          onClick={handleBackToPosts}
+          className={styles.linkAtras}
+        > 
+          Volver a Posts 
+        </div>
       </div>
     </div>
   )
