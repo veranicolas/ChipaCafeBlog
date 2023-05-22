@@ -44,8 +44,12 @@
       }
 
       > a:hover{
-        background-color: rgb(29, 29, 29);
-        color: rgb(235, 235, 235);
+        background-color: rgb(14, 14, 14);
+        transform: scale(1.2);
+        box-shadow: -1px 1px 12px 3px rgba(0,0,0,0.37);
+        -webkit-box-shadow: -1px 1px 12px 3px rgba(0,0,0,0.37);
+        -moz-box-shadow: -1px 1px 12px 3px rgba(0,0,0,0.37);
+        color: rgb(230, 230, 230);
       }
     }
   }
