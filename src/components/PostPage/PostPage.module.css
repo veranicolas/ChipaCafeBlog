@@ -37,13 +37,9 @@
     .title{
       border-bottom: 10px;
       font-size: 3em;
-      margin-bottom: 10px;
-      margin-top: 10px;
+      margin: 3vh 0;
       
       font-weight: 100;
-    }
-    .creadoPor{
-      font-size: 1em;
     }
     .creadoFecha{
       color:rgb(116, 116, 116);
@@ -54,7 +50,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         text-align: justify;
-        
+        margin: 2.5vh 0;
         width: 100%;
 
         font-size: 1.3em;
@@ -62,6 +58,7 @@
     .conclusion{
         font-size: 1.3em;
         text-align: justify;
+        margin: 2.5vh 0;
     }
     .pieDePost{
         width:100%;
@@ -70,11 +67,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
+
+        margin: 2vh 0;
         
         .creadoPor{
             width: 50%;
-            margin-top: 30px;
-            margin-bottom: 20px;
+            margin-left: 0;
             font-size: 1.1em;
         }
         
@@ -82,6 +80,7 @@
             width:auto;
             padding:20px;
             height: auto;
+            margin-right: 0;
             border: 1px solid rgb(239, 239, 239);
             justify-content: flex-end;
             border-radius: 10px;
@@ -102,6 +101,16 @@
     padding-top: 20px;
     height:auto;
     font-size: 12px;
+
+    .title{
+      margin: 3vh 0;
+    }
+    .postBody{
+      margin: 1.7vh 0;
+    }
+    .conclusion{
+      margin: 1.7vh 0;
+    }
   }
 
 }
@@ -117,10 +126,14 @@
       height: 200px;
     }
     .title{
+      margin: 3vh 0;
       font-size: 6.2vw;
     }
     .postBody{
-      padding-top: 10px;
+      margin: 1.7vh 0;
+    }
+    .conclusion{
+      margin: 1.7vh 0;
     }
   }
 
